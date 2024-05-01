@@ -1,0 +1,18 @@
+table {
+    padding-top: 70px;
+    width: 100%; /* Ensures tables have 100% width */
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-right: 10px; /* This margin is applied to the right side of the table */
+    padding-right: 10px; /* Additional padding to ensure the space */
+    
+  }
+
+  table feedback{
+    padding-top: 70px;
+    width: 100%; /* Ensures tables have 100% width */
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-right: 10px; /* This margin is applied to the right side of the table */
+    padding-right: 10px; 
+  }

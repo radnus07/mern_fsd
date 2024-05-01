@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+ *, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#logbody {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items: center; 
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e); 
+}
+
+.container {
+    width: 60vw;
+    height: 65%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "login";
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+    background: white; 
+    overflow: hidden;
+}
+
+
+
+.container2 {
+    width: 60vw;
+    height: 65%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "signup";
+    box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+}
+
+.design {
+    grid-area: design;
+    display: none;
+    position: relative;
+}
+
+
+.rotate-45 {
+    transform: rotate(-45deg);
+}
+
+.rotate-315 {
+    transform: rotate(-315deg);
+}
+
+.design .pill-1 {
+    bottom: 0;
+    left: -40px;
+    position: absolute;
+    width: 80px;
+    height: 200px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
+    border-radius: 40px;
+}
+
+.design .pill-2 {
+    top: -100px;
+    left: -80px;
+    position: absolute;
+    height: 450px;
+    width: 220px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859, #a5294e);
+    border-radius: 200px;
+    overflow: hidden;
+}
+
+.design .pill-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/logo-colored.svg);
+    
+    
+    background-position: center;
+    border-radius: 200px;
+}
+
+.design .pill-3 {
+    top: -100px;
+    left: 160px;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
+    border-radius: 70px;
+}
+
+.design .pill-4 {
+    bottom: -180px;
+    left: 220px;
+    position: absolute;
+    height: 300px;
+    width: 120px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
+    border-radius: 70px;
+}
+
+.design .pill-11 {
+    bottom: 0;
+    right: -40px;
+    position: absolute;
+    width: 80px;
+    height: 200px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
+    border-radius: 40px;
+} 
+
+ .design .pill-22 {
+    top: -100px;
+    right: -80px;
+    position: absolute;
+    height: 450px;
+    width: 220px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
+    border-radius: 200px;
+    
+} 
+/*border: 30px solid #99ffff;*/
+.design .pill-22::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/logo-colored.svg);
+    
+    
+    background-position: center;
+    border-radius: 200px;
+}
+
+.design .pill-33 {
+    top: -100px;
+    right: 160px;
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
+    border-radius: 70px;
+}
+
+.design .pill-44 {
+    bottom: -180px;
+    right: 220px;
+    position: absolute;
+    height: 300px;
+    width: 120px;
+    background: linear-gradient(to bottom right, #A4123F, #a53859,#a5294e);
+    border-radius: 70px;
+}
+
+.login {
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+    align-content: center;
+}
+
+.signup {
+    grid-area: signup;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+    align-content: center;
+}
+
+.signup .logo{
+position: absolute;
+top: 35px;
+
+height: 6%;
+}
+
+.logo{
+    position: absolute;
+    top: 55px;
+    
+    height: 6%;
+    }
+
+.head{
+    color: #A4123F;
+}
+
+.login h3.title {
+    margin: 5px 0 15px 0;
+
+} 
+
+/* .login h1.head {
+    color: #A4123F;
+
+} */
+
+ .text-input {
+    background: #e6e6e6;
+    height: 40px;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+.text-input input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.text-input i {
+    color: #686868;
+}
+
+::placeholder {
+    color: #9a9a9a;
+}
+
+.login-btn {
+    width: 66%;
+    height: 40px;
+   
+    
+    color: white;
+    background: linear-gradient(to bottom right, #A4123F, #83334b,#9c6374);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: end;
+    padding-right: 25px;
+    transition: transform 0.1s ease;
+}
+
+.login-btn:active {
+    transform: scale(1.05);
+}
+
+.login-btn:hover {
+    background: linear-gradient(to bottom right, #a5294e, #a53859,#A4123F);
+}
+
+a {
+    font-size: 12px;
+    color: #9a9a9a;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+a.forgot {
+    margin-top: 15px;
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    position: relative;
+   padding-top: 25px;
+}
+
+.create i {
+    color: #9a9a9a;
+    margin-left: 10px;
+}
+
+#togglePassword {
+    border: none !important;
+}
+
+#toggleCnfmPassword {
+    border: none !important;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        height: 30vw;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "design login";
+    }
+
+    .container2 {
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "signup design";
+    }
+
+    .logo{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        height: 6%;
+        }
+        
+    .signup .logo{
+        position: absolute;
+        top: 25px;
+        left: 1px;
+        height: 6%;
+        }
+
+    .login {
+        grid-area: login;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: relative;
+        background: white;
+        align-content: center;
+        padding-left: 0px
+    }
+
+    .signup {
+        grid-area: signup;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: relative;
+        background: white;
+        align-content: center;
+       margin-left: 45px;
+    }
+    
+    .design {
+        display: block;
+    }
+} 

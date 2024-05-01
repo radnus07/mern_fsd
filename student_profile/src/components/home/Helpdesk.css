@@ -1,0 +1,60 @@
+/* Academics.css */
+.HelpDesk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 30px; /* Adjust the top padding as needed */
+    font-family: 'Kanit', sans-serif;
+    margin-top: 40px;
+  }
+  
+  .accordion {
+    width: 95%;
+    margin-top: 20px; /* Add more space at the top of each accordion */
+    padding-top: 10px;
+    cursor: pointer;
+    background-color: #A4123F;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .accordion.active {
+    background-color: #A4123F; /* Change as per your design */
+  }
+  
+  .tabcontent {
+    display: none;
+  }
+  
+  .tabcontent.show {
+    display: block;
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-right: 10px; /* This margin is applied to the right side of the table */
+    padding-right: 10px; /* Additional padding to ensure the space */
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #fff;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #a4123f;
+    color: #fff;
+  }
+  

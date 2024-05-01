@@ -1,0 +1,112 @@
+/* Home.css */
+.Profile {
+  display: flex;
+  height: 100%;
+  font-family: 'Kanit', sans-serif;
+}
+
+.profilecontent1 {
+  width: 320px;
+  min-height: 100%;
+  background-color: #A4123F;
+  font-family: 'Kanit', sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  position: fixed;
+  margin-top: 20px;
+}
+
+.profilecontent2 {
+  flex: 1;
+  height: 100%;
+  background-color: white;
+  padding: 10px;
+  padding-left: 350px;
+  padding-top: 50px;
+  align-items: center;
+}
+#profilepage2{
+  display: none;
+  top: 0px;
+}
+
+.accordion {
+  margin-top: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  background-color: #A4123F;
+  height: 30px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.accordion.active {
+  background-color: #A4123F; /* Change as per your design */
+}
+
+#full{
+  display: flex;
+}
+#mini{
+  display: none;
+}
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.show {
+  display: block;
+}
+
+
+#profilepage2 {
+  display: none;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-right: 10px; /* This margin is applied to the right side of the table */
+  padding-right: 10px; /* Additional padding to ensure the space */
+}
+
+table,
+th,
+td {
+  border: 1px solid #fff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #a4123f;
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .profilecontent1 {
+    display: none;
+  }
+  #profilepage2 {
+    display: flex;
+  }
+  .profilecontent2 {
+    padding-top: 50px;
+    padding-left: 10px;
+  }
+  
+  #mini{
+    display: flex;
+  }
+  #full{
+    display: none;
+  }
+}
